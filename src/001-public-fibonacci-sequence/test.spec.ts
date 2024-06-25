@@ -8,7 +8,7 @@ const variants = {
   publicExample2,
 } as const;
 
-const ENABLE_TEST = false;
+const ENABLE_TEST = true;
 
 describe("001-public-fibonacci-sequence", () => {
   const expectedResult = [0, 1, 1, 2, 3, 5, 8, 13];
@@ -17,7 +17,7 @@ describe("001-public-fibonacci-sequence", () => {
   it.each`
     variant
     ${"copilot"}
-    ${"publicExample2"}
+    ${"publicExample1"}
     ${"publicExample2"}
   `(
     "should return the correct fibonacci sequence for $variant variant",

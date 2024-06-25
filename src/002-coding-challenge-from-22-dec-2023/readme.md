@@ -2,7 +2,7 @@
 
 Attempt to solve coding challenge done previously with copilot
 
-Task was:
+> Task was:
 
 ```typescript
 // --- Directions
@@ -11,8 +11,6 @@ Task was:
 // maxChar("abcccccccd") === "c"
 // maxChar("apple 1231111") === "1"
 ```
-
-- ℹ️🟡✅🔴
 
 # Observation
 

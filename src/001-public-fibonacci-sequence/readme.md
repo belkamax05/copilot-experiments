@@ -36,13 +36,12 @@ function fibonacci(num: number): number {
 }
 ```
 
-- 🔴 Error, condition "if (num <= 1) return 1" makes it F(0)=1, which isn't right for Fibonacci sequence
+- 🔴 Error, condition "if (num <= 1) return 1" makes it F(0)=1, which isn't right for Fibonacci sequence and it shifts sequence by 1 index.
+- 🔴 Result is [1, 1, 2, 3, 5, 8, 13, 21]
 
 ## Public example 2
 
 > source https://rahulbansalc6414.medium.com/fibonacci-program-part-2-with-typescript-2334818c1b69
-
-- 🔴 Error, doesn't support F(0), throws an error
 
 ```typescript
 function getFibRecursive(n: number): number {
@@ -52,9 +51,12 @@ function getFibRecursive(n: number): number {
 }
 ```
 
+- 🔴 Doesn't support F(0), throws an error
+
 ![Error](public-example-2-error.png "RangeError: Maximum call stack size exceeded")
 
-- 🔴 Error, when previous error fixed by adding "if (n <= 0) return 0", result is incorrect. Generated sequence is [0, 1, 2, 3, 5, 8, 13, 21]
+- 🔴 Error, when previous error fixed by adding "if (n <= 0) return 0", result is incorrect.
+- 🔴 Result is [0, 1, 2, 3, 5, 8, 13, 21]
 
 # Conclusion
 
