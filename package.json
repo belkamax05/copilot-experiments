@@ -1,0 +1,8 @@
+{
+  "name": "copilot-experiments",
+  "version": "0.0.1",
+  "description": "Test code for copilot",
+  "main": "index.js",
+  "license": "MIT",
+  "packageManager": "yarn@4.3.1"
+}
